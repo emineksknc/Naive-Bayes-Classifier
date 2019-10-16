@@ -131,18 +131,19 @@ def train(st, nd, rd, th):
     B =  p_istotal*p_is1*p_is2*p_is3*p_is4
     C =  p_ivitotal*p_ivi1*p_ivi2*p_ivi3*p_ivi4
 
-    print(A,B,C)
+    
+    
     prediction(A,B,C)
     
     
 
 def Main():
     
-    print("please enter attribute values:")
-    first_attribute = float(input("1st:"))
-    second_attribute = float(input("2nd:"))
-    third_attribute = float(input("3rd:"))
-    fourth_attribute = float(input("4th:"))
+    print("please enter values:")
+    first_attribute = float(input("sepal length in cm:"))
+    second_attribute = float(input("sepal width in cm:"))
+    third_attribute = float(input("petal length in cm:"))
+    fourth_attribute = float(input("petal width in cm:"))
     
     train(first_attribute,second_attribute,third_attribute,fourth_attribute)
 
